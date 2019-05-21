@@ -1,0 +1,69 @@
+<section>
+    <div class="row">
+        <div class="col-sm text-center">
+            <mat-list>
+                <h3 mat-subheader>
+                    Asistente &nbsp;
+                    <mat-icon (click)="helper.show();" #helper="matTooltip" matTooltipClass="help-primary" matTooltipPosition="right" matTooltip="Selecciona una consulta para generar el campo automáticamente" class="pointer">report</mat-icon>
+                </h3>
+                <mat-list>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito una campaña de marketing para mi negocio.');">
+                            Hola, necesito una campaña de marketing para mi negocio.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito un community manager para mis redes sociales.');">
+                            Hola, necesito un community manager para mis redes sociales.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito una página de facebook de negocios.');">
+                            Hola, necesito una página de facebook empresas.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Necesito una campaña SEM para promocionar mi negocio.');">
+                            Necesito una campaña SEM para promocionar mi negocio.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Necesito una optimización SEO para promocionar mi sitio web.');">
+                            Necesito una optimización SEO para promocionar mi sitio web.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Necesito un video digital para promocionar mi negocio.');">
+                            Necesito un video digital para promocionar mi negocio.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Solo necesito un especialista en marketing.');">
+                            Solo necesito un especialista en marketing.
+                      </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Solo quiero decir hola');">
+                            Solo quiero decir hola.
+                      </span>
+                    </mat-list-item>
+                </mat-list>
+            </mat-list>
+        </div>
+    </div>
+</section>
