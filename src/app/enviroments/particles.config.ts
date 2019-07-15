@@ -14,7 +14,7 @@ export const ParticleConfigDesktop: object = {
             type: 'edge',
         },
         number: {
-          value: 30,
+          value: 50,
       },
   }
 };

@@ -4,14 +4,14 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-5 col-lg-6 order-md-2 wow slideInRight">
-                <img src="./assets/campaign/pages/1920/marketing-specialist.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="Marketing Online para negocios">
+                <img title="Analisis de métricas" description="Monitoreo de campañas mediante Métricas para ver el KPI" src="./assets/campaign/pages/1920/Analytics.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="Marketing Online Analytics">
             </div>
             <div class="col-12 col-md-7 col-lg-6 order-md-1 wow slideInLeft">
-                <h1 class="display-3 text-center text-md-left text-white Aquatico-Regular font-30">
-                    Impulsa tu negocio hoy!
+                <h1 style="font-size: 40px !important" class="display-3 text-center text-md-left text-white LinotteRegular font-24">
+                    ¿Tu negocio no da los resultados que deseas?
                 </h1>
                 <p class="text-center text-md-left  mb-6 mb-lg-8 LinotteLight text-white font-25">
-                    Multiplique el tráfico de ventas a su negocio con campañas de marketing exitosas.
+                    Potenciamos el alcance y objetivos de tu negocio a través de estrategias de marketing innovadoras
                 </p>
                 <div class="text-center text-md-left">
                     <form ngNativeValidate (ngSubmit)="PrecreatedEmail(campaignForm);" #campaignForm="ngForm">
@@ -20,9 +20,14 @@
                                 <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
                             </div>
                             <div class="col-sm">
-                                <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
+                                <!--<button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
                                     Empezar mi campaña!
+                                </button>-->
+                                <!-- Principio del widget de enlace de Calendly -->
+                                <button mat-raised-button color="primary" type="button" class="btn-block LinotteRegular btn-trial text-white" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;">
+                                 Solicitar presupuesto
                                 </button>
+                                <!-- Final del widget de enlace de Calendly -->
                             </div>
                         </div>
                     </form>
@@ -32,7 +37,9 @@
                     <div class="row">
                         <div class="col text-center">
                             <p class="text-white LinotteLight font-14 font-weight-light">
-                                Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                                <!--Debido a la cantidad de solicitudes, se realizará un cargo para garantizar una cita con nosotros, una vez completada la reunión se te reembolsará el dinero, de no ser capaz de asistir contáctanos para reprogramar o cancelar. El no asistir sin previo aviso
+                                hará el cargo irreversible.-->
+                                Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema
                             </p>
                         </div>
                     </div>
@@ -47,20 +54,21 @@
             <div class="col-sm">
                 <div class="row wow slideInUp">
                     <div class="col-sm">
-                        <img style="width: 150%; margin-top: -50%" class="offset-xl-1" src="./assets/campaign/pages/1920/marketing-specialist2.png" alt="Campañas de Marketing digital">
-                    </div>
-                    <div class="col-sm">
-                        <img class="w-75 offset-5" src="./assets/campaign/pages/1920/repeticiones-03.png" alt="Lógica del marketing">
+                        <img title="Analisis de métricas" description="Monitoreo de campañas mediante Métricas para ver el KPI" style="width: 100%" class="offset-xl-1" src="./assets/campaign/pages/1920/analytics2.png" alt="Campañas de Marketing digital">
                     </div>
                 </div>
             </div>
             <div class="col-sm text-center offset-xl-2 wow slideInUp">
                 <div class="space-100"></div>
-                <h1 style="font-size: 22px" class="text-white Aquatico-Regular">
-                    Comience ahora para aumentar sus oportunidades de ventas
+                <h1 style="font-size: 23px" class="text-white LinotteRegular">
+                    Crea tu propia estrategia y descubre como puedes potenciar tu negocio al menor tiempo posible
                 </h1>
                 <p class="text-white LinotteLight font-16 font-weight-light">
+                    <!--
                     Para obtener resultados reales, defina por qué su marca representa, sus valores centrales y el tono de voz y luego comuníquese de manera consistente en esos términos.
+                    -->
+                    Estudiamos tus objetivos y la proyectamos en el mercado en diferentes periodos de tiempo, nuestra misión es crear un plan de marketing digital, que permita potenciar tu negocio y llevarlo a otro nivel a través de tácticas y objetivos, además monitorearemos
+                    tu negocio por 90 dias totalmente gratis.
                 </p>
             </div>
         </div>
@@ -75,13 +83,28 @@
         <div class="space-50"></div>
         <div class="row">
             <div class="col-sm text-center offset-xl-5 wow slideInUp">
-                <button (click)="OpenTrial();" style="position: relative; left: -0.5em;" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button">
+                <!--<button (click)="OpenTrial();" style="position: relative; left: -0.5em;" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button">
                             Empezar mi campaña!
+                </button>-->
+                <!-- Principio del widget de enlace de Calendly -->
+                <button style="position: relative; left: -0.5em;" mat-raised-button color="primary" type="button" class="btn-block LinotteRegular btn-trial text-white col-5" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;">
+                    Solicitar presupuesto
                 </button>
+                <!-- Final del widget de enlace de Calendly -->
             </div>
         </div>
         <!-- end divider -->
         <!-- services -->
+        <div class="space-80"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
         <div class="space-50"></div>
         <div class="row offset-1 wow slideInUp">
             <div class="col-lg-4 col-sm-6">
@@ -93,11 +116,12 @@
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Campañas Globales
+                            Briefing y Estudio del mercado
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Posicionamos su negocio en los motores de búsqueda a través de un estudio exhaustivo de palabras clave, evaluamos las principales competencias y creamos un modelo de trabajo exitoso a través de campañas de remarketing. Engancha el usuario con una campaña
-                            exitosa de Marketing.
+                            <!--Posicionamos su negocio en los motores de búsqueda a través de un estudio exhaustivo de palabras clave, evaluamos las principales competencias y creamos un modelo de trabajo exitoso a través de campañas de remarketing. Engancha el usuario con una campaña
+                            exitosa de Marketing.-->
+                            Evaluamos sus condiciones, objetivos, tácticas e implementamos un plan de acción que permitirá darle combustible a su negocio.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -106,16 +130,17 @@
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                     <div class="px-4 py-5 text-center">
                         <i class="material-icons font-60 text-white">
-                                laptop_chromebook
+                            whatshot
                         </i>
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Campañas Orgánicas
+                            Marketing creativo
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Ampliamos el posicionamiento orgánico en los motores de búsqueda a través de la optimización de SEO y SEM, la creación de Landings Pages, aplicaciones, blogs, videos digitales, datos estructurados, mapas de sitio, robots y mapas de Google. Intentando
-                            construir todos los enlaces posibles y asociarlos con las herramientas de Google y Bing.
+                            <!--Ampliamos el posicionamiento orgánico en los motores de búsqueda a través de la optimización de SEO y SEM, la creación de Landings Pages, aplicaciones, blogs, videos digitales, datos estructurados, mapas de sitio, robots y mapas de Google. Intentando
+                            construir todos los enlaces posibles y asociarlos con las herramientas de Google y Bing.-->
+                            Estructuramos sus campañas con un diseño a la medida, que permitirá darle el engagement que su marca necesita.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -124,16 +149,17 @@
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                     <div class="px-4 py-5 text-center">
                         <i class="material-icons font-60 text-white">
-                            share
+                            flag
                         </i>
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Redes Sociales
+                            Marcamos tendencias
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Creamos una campaña dirigida a las redes sociales a través de un manual de identidad visual en el que describiremos cómo administrar contenido de calidad, las pautas a seguir y cómo segmentar la campaña según las diferentes necesidades, desde el tráfico
-                            al sitio web hasta cómo obtener clientes potenciales.
+                            <!-- Creamos una campaña dirigida a las redes sociales a través de un manual de identidad visual en el que describiremos cómo administrar contenido de calidad, las pautas a seguir y cómo segmentar la campaña según las diferentes necesidades, desde el tráfico
+                            al sitio web hasta cómo obtener clientes potenciales.-->
+                            Creamos estrategias de Merchandising y lo accionamos mediante las Redes Sociales.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -152,17 +178,17 @@
         <div class="row">
             <div class="col-sm text-center">
                 <a [routerLink]="['/']" title="Brand logo">
-                    <img style="position: relative; left: 0.5em;" src="./assets/campaign/pages/768/logo-03.png" alt="Logo de marca de Syfte">
+                    <img title="Syfte" description="Logo de Syfte Designs" style="position: relative; left: 0.5em;" src="./assets/campaign/pages/768/logo-03.png" alt="Logo de marca de Syfte">
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col-sm text-center">
-                <h1 class="display-3 text-center  text-white Aquatico-Regular font-45">
-                    Impulsa tu negocio hoy
+                <h1 style="font-size: 32px !important" class="display-3 text-center  text-white LinotteRegular font-45">
+                    ¿Tu negocio no da los resultados que deseas?
                 </h1>
                 <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-16">
-                    Multiplique el tráfico de ventas a su negocio con campañas de marketing exitosas.
+                    Potenciamos el alcance y objetivos de tu negocio a través de estrategias de marketing innovadoras.
                 </p>
             </div>
         </div>
@@ -173,8 +199,8 @@
                         <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
                     </div>
                     <div class="col-sm">
-                        <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
-                                    Start campaign
+                        <button mat-raised-button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;" color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
+                            Solicitar presupuesto
                         </button>
                     </div>
                 </div>
@@ -184,7 +210,7 @@
         <div class="row">
             <div class="col text-center ">
                 <p class="text-white LinotteLight font-14 font-weight-light">
-                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                    Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema
                 </p>
             </div>
         </div>
@@ -194,34 +220,48 @@
         <div class="space-80"></div>
         <div class="col-12 col-md-7 col-lg-6 order-md-1">
             <h1 style="font-size: 22px" class="display-3 text-center text-md-left text-white Aquatico-Regular font-24">
-                Comience ahora para aumentar sus oportunidades de ventas
+                Crea tu propia estrategia y descubre como puedes potenciar tu negocio al menor tiempo posible
             </h1>
             <p style="font-weight: lighter" class="text-center text-md-left  mb-6 mb-lg-8 LinotteRegular text-white font-16">
-                Para obtener resultados reales, defina por qué su marca representa, sus valores centrales y el tono de voz y luego comuníquese de manera consistente en esos términos.
+                Estudiamos tus objetivos y la proyectamos en el mercado en diferentes periodos de tiempo, nuestra misión es crear un plan de marketing digital, que permita potenciar tu negocio y llevarlo a otro nivel a través de tácticas y objetivos, además monitorearemos
+                tu negocio por 90 dias totalmente gratis.
             </p>
         </div>
         <div class="space-40"></div>
         <div class="row">
             <div class="col-sm text-left">
-                <img style="margin-top: -20%" src="./assets/campaign/pages/768/marketing-specialist.png" alt="Campañas de Marketing para negocios">
+                <img title="Analisis de métricas" description="Monitoreo de campañas mediante Métricas para ver el KPI" class="w-100" src="./assets/campaign/pages/1920/analytics-1.png" alt="Campañas de Marketing para negocios con Analytics">
             </div>
-            <div class="col-sm d-none d-lg-block">
+            <!--<div class="col-sm d-none d-lg-block">
                 <img style="background-color:  transparent; border: 0px; margin-top: -50% !important" class="img-thumbnail globe" src="./assets/campaign/pages/768/marketing-logistic.png" alt="Lógica de un especialista en marketing">
             </div>
             <div class="col-sm d-none d-md-block d-lg-none">
                 <img style="background-color:  transparent; border: 0px; margin-top: -100% !important" class="img-thumbnail globe" src="./assets/campaign/pages/480/marketing-logistic.png" alt="Soluciones de Marketing">
-            </div>
+            </div>-->
         </div>
         <div class="space-50"></div>
         <section class="offset-md-1 offset-lg-2 border-mg" style="border-top: 2px solid white; width: 80%;"></section>
         <div class="space-30"></div>
         <div class="col-md-7 col-lg-9 text-center offset-md-4 offset-lg-3 row-btn-mg">
-            <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial btn-trial-mg" type="button">
+            <!--<button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial btn-trial-mg" type="button">
                         Start campaign
+            </button>-->
+            <button mat-raised-button color="primary" type="button" class="btn-block col-6 LinotteRegular btn-trial btn-trial-mg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;">
+                Solicitar presupuesto
             </button>
         </div>
         <!-- services -->
         <div class="space-70"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <div class="space-50"></div>
         <div class="row">
             <div class="col-md-4 col-lg-4">
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
@@ -232,11 +272,10 @@
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Campañas Globales
+                            Briefing y Estudio del mercado
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Posicionamos su negocio en los motores de búsqueda a través de un estudio exhaustivo de palabras clave, evaluamos las principales competencias y creamos un modelo de trabajo exitoso a través de campañas de remarketing. Engancha el usuario con una campaña
-                            exitosa de Marketing.
+                            Evaluamos sus condiciones, objetivos, tácticas e implementamos un plan de acción que permitirá darle combustible a su negocio.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -245,16 +284,15 @@
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                     <div class="px-4 py-5 text-center">
                         <i class="material-icons font-60 text-white">
-                            laptop_chromebook
+                            whatshot
                         </i>
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Campañas Orgánicas
+                            Marketing creativo
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Ampliamos el posicionamiento orgánico en los motores de búsqueda a través de la optimización de SEO y SEM, la creación de Landings Pages, aplicaciones, blogs, videos digitales, datos estructurados, mapas de sitio, robots y mapas de Google. Intentando
-                            construir todos los enlaces posibles y asociarlos con las herramientas de Google y Bing.
+                            Estructuramos sus campañas con un diseño a la medida, que permitirá darle el engagement que su marca necesita.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -263,16 +301,15 @@
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                     <div class="px-4 py-5 text-center">
                         <i class="material-icons font-60 text-white">
-                            share
+                            flag
                         </i>
                     </div>
                     <div class="px-4 pb-5 text-center">
                         <mat-card-title class="text-white LinotteRegular">
-                            Redes Sociales
+                            Marcamos tendencias
                         </mat-card-title>
                         <mat-card-content class="text-white LinotteLight">
-                            Creamos una campaña dirigida a las redes sociales a través de un manual de identidad visual en el que describiremos cómo administrar contenido de calidad, las pautas a seguir y cómo segmentar la campaña según las diferentes necesidades, desde el tráfico
-                            al sitio web hasta cómo obtener clientes potenciales.
+                            Creamos estrategias de Merchandising y lo accionamos mediante las Redes Sociales.
                         </mat-card-content>
                     </div>
                 </mat-card>
@@ -289,17 +326,17 @@
         <div class="row">
             <div class="col text-center">
                 <a [routerLink]="['/']" title="brand logo">
-                    <img src="./assets/campaign/pages/480/logo-03.png" alt="Logo de marca de Syfte">
+                    <img title="Logo de Syfte" description="Logo de Syfte Designs" src="./assets/campaign/pages/480/logo-03.png" alt="Logo de marca de Syfte">
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <h1 class="display-3 text-center  text-white Aquatico-Regular font-30">
-                    Impulsa tu negocio hoy
+                <h1 style="font-size: 28px !important" class="display-3 text-center  text-white LinotteRegular font-30">
+                    ¿Tu negocio no da los resultados que deseas?
                 </h1>
                 <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-20">
-                    Multiplique el tráfico de ventas a su negocio con campañas de marketing exitosas..
+                    Potenciamos el alcance y objetivos de tu negocio a través de estrategias de marketing innovadoras.
                 </p>
             </div>
         </div>
@@ -313,8 +350,11 @@
                     </mat-form-field>
                 </div>
                 <div class="col-sm text-center">
-                    <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="submit">
+                    <!--<button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="submit">
                                 Empezar mi campaña!
+                    </button>-->
+                    <button mat-raised-button color="primary" type="button" class="btn-block LinotteRegular btn-trial btn-trial-mg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;">
+                        Solicitar presupuesto
                     </button>
                 </div>
             </form>
@@ -324,24 +364,25 @@
         <div class="row">
             <div class="col-12">
                 <p class="text-white LinotteRegular font-14 text-center">
-                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                    Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema
                 </p>
             </div>
         </div>
         <div class="space-30"></div>
         <div class="row">
             <div class="col text-center">
-                <img class="img-specialist specialist-mg" src="./assets/campaign/pages/480/marketing-specialist.png" alt="Impulsa tu negocio con un especialista en marketing">
+                <img title="Analisis de métricas" description="Monitoreo de campañas mediante Métricas para ver el KPI" class="w-100" src="./assets/campaign/pages/1920/analytics-1.png" alt="Metricas de Google Adwords">
             </div>
         </div>
         <div class="space-20"></div>
         <div class="row">
             <div class="col text-center">
-                <h1 style="font-size: 22px" class="display-3 text-center  text-white Aquatico-Regular font-32">
-                    Comience ahora para aumentar sus oportunidades de ventas
+                <h1 style="font-size: 22px" class="display-3 text-center  text-white LinotteRegular font-32">
+                    Crea tu propia estrategia y descubre como puedes potenciar tu negocio al menor tiempo posible
                 </h1>
                 <p style="font-weight: lighter" class="text-center   mb-6 mb-lg-8 LinotteRegular text-white font-16">
-                    Para obtener resultados reales, defina por qué su marca representa, sus valores centrales y el tono de voz y luego comuníquese de manera consistente en esos términos.
+                    Estudiamos tus objetivos y la proyectamos en el mercado en diferentes periodos de tiempo, nuestra misión es crear un plan de marketing digital, que permita potenciar tu negocio y llevarlo a otro nivel a través de tácticas y objetivos, además monitorearemos
+                    tu negocio por 90 dias totalmente gratis.
                 </p>
             </div>
         </div>
@@ -352,13 +393,26 @@
             </div>
             <div class="space-20"></div>
             <div style="position: relative; left: 0.7em;" class="col-sm text-center offset-1">
-                <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button">
+                <!--<button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button">
                             Empezar mi campaña!
+                </button>-->
+                <button mat-raised-button color="primary" type="button" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/consultoria-de-de-marketing'}); fbq('track', 'Schedule'); return false;">
+                    Solicitar presupuesto
                 </button>
             </div>
         </div>
         <!-- services -->
-        <div class="space-50"></div>
+        <div class="space-80"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <div class="space-80"></div>
         <div class="col">
             <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                 <div class="px-4 py-5 text-center">
@@ -368,11 +422,10 @@
                 </div>
                 <div class="px-4 pb-5 text-center">
                     <mat-card-title class="text-white LinotteRegular">
-                        Campañas Globales
+                        Briefing y Estudio del mercado
                     </mat-card-title>
                     <mat-card-content class="text-white LinotteLight">
-                        Posicionamos su negocio en los motores de búsqueda a través de un estudio exhaustivo de palabras clave, evaluamos las principales competencias y creamos un modelo de trabajo exitoso a través de campañas de remarketing. Engancha el usuario con una campaña
-                        exitosa de Marketing.
+                        Evaluamos sus condiciones, objetivos, tácticas e implementamos un plan de acción que permitirá darle combustible a su negocio.
                     </mat-card-content>
                 </div>
             </mat-card>
@@ -382,16 +435,15 @@
             <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                 <div class="px-4 py-5 text-center">
                     <i class="material-icons font-60 text-white">
-                        laptop_chromebook       
+                        whatshot       
                     </i>
                 </div>
                 <div class="px-4 pb-5 text-center">
                     <mat-card-title class="text-white LinotteRegular">
-                        Campañas Orgánicas
+                        Marketing Creativo
                     </mat-card-title>
                     <mat-card-content class="text-white LinotteLight">
-                        Ampliamos el posicionamiento orgánico en los motores de búsqueda a través de la optimización de SEO y SEM, la creación de Landings Pages, aplicaciones, blogs, videos digitales, datos estructurados, mapas de sitio, robots y mapas de Google. Intentando
-                        construir todos los enlaces posibles y asociarlos con las herramientas de Google y Bing.
+                        Estructuramos sus campañas con un diseño a la medida, que permitirá darle el engagement que su marca necesita.
                     </mat-card-content>
                 </div>
             </mat-card>
@@ -401,16 +453,15 @@
             <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
                 <div class="px-4 py-5 text-center">
                     <i class="material-icons font-60 text-white">
-                        share
+                        flag
                     </i>
                 </div>
                 <div class="px-4 pb-5 text-center">
                     <mat-card-title class="text-white LinotteRegular">
-                        Redes Sociales
+                        Marcamos tendencias
                     </mat-card-title>
                     <mat-card-content class="text-white LinotteLight">
-                        Creamos una campaña dirigida a las redes sociales a través de un manual de identidad visual en el que describiremos cómo administrar contenido de calidad, las pautas a seguir y cómo segmentar la campaña según las diferentes necesidades, desde el tráfico
-                        al sitio web hasta cómo obtener clientes potenciales.
+                        Creamos estrategias de Merchandising y lo accionamos mediante las Redes Sociales.
                     </mat-card-content>
                 </div>
             </mat-card>
@@ -420,3 +471,5 @@
     <div class="space-100"></div>
 </section>
 <!-- end mobile -->
+<!-- form sign in -->
+<app-contact></app-contact>

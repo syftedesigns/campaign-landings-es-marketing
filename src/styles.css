@@ -597,7 +597,7 @@ Custom theme
     Ads campaign
     */
     .ads-theme-shop {
-        background-image: url(./assets/campaign/pages/1920/bg-shop-desktop.jpg) !important;
+        background-image: url(./assets/campaign/pages/1920/F.jpg) !important;
         background-repeat: no-repeat;
     }
 }
@@ -626,9 +626,8 @@ Custom theme
 
 @media only screen and (max-width: 800px) {
     .ads-theme-shop {
-        background-image: url(./assets/campaign/pages/480/bg-shop-mobile.jpg) !important;
-        background-repeat: no-repeat;
-        background-size: cover
+        background-image: url(./assets/campaign/pages/480/F2.jpg) !important;
+        background-repeat: no-repeat !important;
     }
 }
 
@@ -817,6 +816,10 @@ Custom theme
 
 .grecaptcha-badge {
     z-index: 1000 !important;
+}
+
+.mat-snack-bar-container {
+    max-width: 100% !important;
 }
 
 
